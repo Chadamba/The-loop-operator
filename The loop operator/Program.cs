@@ -3,16 +3,21 @@ class MainClass
 {
     private static void Main()
     {
+        Console.BackgroundColor = ConsoleColor.Cyan;
         while (true)
         {
-            Console.WriteLine("МЕНЮ:" +
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine( "МЕНЮ:" +
                 "\n" +
-                "\n Выберите пункт из списка." +
-                "\n" +
-                "\n 1 - Таблица умножения от 1 до 10" +
+                "\n Выберите пункт из списка.");
+            Console.ResetColor();
+
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("\n 1 - Таблица умножения от 1 до 10" +
                 "\n 2 - Делители" +
                 "\n 3 - Условие кратности" +
                 "\n 4 - Произведение чётных чисел");
+            Console.ResetColor();
 
             int userСhoice = GetInt(nameof(userСhoice));
             if (userСhoice == 1)
