@@ -16,7 +16,7 @@ class MainClass
             Console.WriteLine("\n 1 - Таблица умножения от 1 до 10" +
                 "\n 2 - Делители" +
                 "\n 3 - Условие кратности" +
-                "\n 4 - Произведение чётных чисел");
+                "\n 4 - ");
             Console.ResetColor();
 
             int userСhoice = GetInt(nameof(userСhoice));
@@ -34,7 +34,7 @@ class MainClass
             }
             else if (userСhoice == 4)
             {
-                ProductOfEvenNumbers();
+                
             }
             else if (userСhoice >= 5)
             {
@@ -145,15 +145,5 @@ class MainClass
         Console.ResetColor();
     }
 
-    private static void ProductOfEvenNumbers()
-    {
-        int n = int.Parse(Console.ReadLine());
-        int mult = 1;
-
-        for (int i = 2; i <= n; i = i + 2)
-        {
-            mult *= i;
-        }
-        Console.Write(mult);
-    }
+    
 }
