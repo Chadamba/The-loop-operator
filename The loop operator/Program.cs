@@ -7,7 +7,7 @@ class MainClass
         while (true)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine( "МЕНЮ:" +
+            Console.WriteLine("МЕНЮ:" +
                 "\n" +
                 "\n Выберите пункт из списка.");
             Console.ResetColor();
@@ -34,7 +34,7 @@ class MainClass
             }
             else if (userСhoice == 4)
             {
-                
+
             }
             else if (userСhoice >= 5)
             {
@@ -55,10 +55,10 @@ class MainClass
             check = int.TryParse(Console.ReadLine(), out number);
             if (!check)
             {
-                
+
                 Console.WriteLine("Вы ввели неправильное значение." +
                 "\n Введите правильное значение =" + name + ".");
-                
+
             }
         }
         while (!check);
@@ -92,7 +92,7 @@ class MainClass
         int n;
         int numberOfDivisors = 0;
 
-        for (int i = 1; i <= number; i++) 
+        for (int i = 1; i <= number; i++)
         {
             if (number % i == 0)
             {
@@ -108,9 +108,9 @@ class MainClass
         Console.ResetColor();
     }
 
-    private static void MultiplicityCondition() 
+    private static void MultiplicityCondition()
     {
-        Console.ForegroundColor= ConsoleColor.Yellow;
+        Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("\n В данно пунтке Условие кратности" +
             "\n находим все числа от 1 до введеного числа " +
             "\n которые кратны второму введеному числу" +
@@ -130,7 +130,7 @@ class MainClass
 
         for (int i = 1; i <= number; i++)
         {
-            if (i % multiple == 0 && i % notMultiple !=0)
+            if (i % multiple == 0 && i % notMultiple != 0)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($" Число подходит к условию = {i}");
@@ -145,5 +145,23 @@ class MainClass
         Console.ResetColor();
     }
 
+    static void 
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        int count = 0;
+        while (n > 0)
+        {
+            if (n % 10 == 4)
+            {
+                count++;
+            }
+            n /= 10;
+        }
+        Console.WriteLine(count);
+    }
+    static void 
+    {
     
+    }
 }
