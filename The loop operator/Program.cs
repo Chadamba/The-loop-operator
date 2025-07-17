@@ -145,7 +145,7 @@ class MainClass
         Console.ResetColor();
     }
 
-    static void 
+    static void NumberOfFours()
     {
         int n = Convert.ToInt32(Console.ReadLine());
 
@@ -160,8 +160,34 @@ class MainClass
         }
         Console.WriteLine(count);
     }
-    static void 
+    static void ArthurAndFriends()
     {
-    
+        int phoneNumber = Convert.ToInt32(Console.ReadLine());
+        int sevenCount = 0;
+        int zeroCount = 0;
+
+        while (phoneNumber != 0)
+        {
+            int digit = phoneNumber % 10;
+            if (digit == 7)
+            {
+                sevenCount++;
+            }
+            if (digit == 0)
+            {
+                zeroCount++;
+            }
+
+            phoneNumber = phoneNumber / 10;
+        }
+
+        if (sevenCount > 0 && zeroCount == 0)
+        {
+            Console.WriteLine("YES");
+        }
+        else
+        {
+            Console.WriteLine("NO");
+        }
     }
 }
